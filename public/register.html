@@ -6,21 +6,21 @@
   <link href="./style.css" rel="stylesheet">
 </head>
 <body class="bg-register">
-    <div class="form-login items-center flex flex-col bg-[#181A1CD6] bg-opacity-[84%] w-[529px] px-10 rounded-[16px] py-8">
+    <div class="form-login items-center flex flex-col bg-[#181A1CD6] bg-opacity-[84%] w-[529px] max-[1300px]:w-[480px] px-10 rounded-[16px] py-8 my-40">
         <img src="../src/image/logo.png" alt="" class="w-[150px]">
         <div class="mt-8">
-            <h1 class="text-center text-4xl font-lato text-white font-normal">Masuk</h1>
+            <h1 class="text-center max-[1300px]:text-3xl text-4xl font-lato text-white font-normal">Masuk</h1>
             <p class="font-lato text-white text-sm font-normal mt-2">Selamat datang kembali!</p>
         </div>
         <form action="" class="w-full">
             <!-- Username -->
             <h3 class="text-white text-lg font-lato font-medium mb-2">Username</h3>
-            <input type="text" class="w-full border rounded-full h-[45px] text-white border-[#E7E3FC3B]/35 placeholder-[#C1C2C4] px-5 placeholder-lato text-lg" placeholder="Masukkan Username">
+            <input type="text" class="w-full border rounded-full h-[45px] text-white border-[#E7E3FC3B]/35 placeholder-[#C1C2C4] px-5 placeholder-lato max-[1300px]:text-base text-lg" placeholder="Masukkan Username">
         
         <!-- Kata Sandi -->
         <h3 class="text-white text-lg font-lato font-medium mb-2 mt-8">Kata Sandi</h3>
         <div class="relative w-full">
-            <input id="password" type="password" class="w-full border rounded-full h-[45px] text-white border-[#E7E3FC3B]/35 placeholder-[#C1C2C4] px-5 placeholder-lato text-lg pr-12" placeholder="Masukkan Kata Sandi">
+            <input id="password" type="password" class="w-full border rounded-full h-[45px] text-white border-[#E7E3FC3B]/35 placeholder-[#C1C2C4] px-5 placeholder-lato max-[1300px]:text-base text-lg pr-12" placeholder="Masukkan Kata Sandi">
             
             <!-- Tombol Icon Mata -->
             <button type="button" onclick="togglePassword('password', 'eye-open-1', 'eye-closed-1')" class="absolute inset-y-0 right-4 flex items-center">
@@ -55,7 +55,7 @@
 
             <h1 class="text-[#C1C2C4] mt-3 font-lato mr-auto">Sudah punya akun? <a href="index.html" class="text-white">Masuk</a></h1>
 
-            <button type="submit" class="mt-8 font-lato font-semibold text-white bg-[#3D4142] border border-[#E7E3FC3B]/35 rounded-full flex justify-center items-center text-base h-[55px] w-full">
+            <button type="submit" class="mt-8 font-lato max-[1300px]:text-sm font-semibold text-white bg-[#3D4142] border border-[#E7E3FC3B]/35 rounded-full flex justify-center items-center text-base h-[55px] w-full">
                 Daftar
             </button>
 
@@ -63,7 +63,7 @@
 
             <button id="password" type="password" class="w-full border rounded-full h-[45px] text-white border-[#E7E3FC3B]/35 placeholder-[#C1C2C4] px-5 text-lg pr-12 flex justify-center items-center">
                 <img src="../src/image/google.png" alt="" class="w-[20px]">
-                <h1 class="font-lato text-white ml-5">Daftar dengan Google</h1>
+                <h1 class="font-lato text-white ml-5 max-[1300px]:text-sm">Daftar dengan Google</h1>
             </button>
         </form>
         
