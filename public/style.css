@@ -736,6 +736,9 @@
       max-width: 96rem !important;
     }
   }
+  .m-9 {
+    margin: calc(var(--spacing) * 9);
+  }
   .mx-10 {
     margin-inline: calc(var(--spacing) * 10);
   }
@@ -1912,6 +1915,9 @@
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
+  }
+  .p-9 {
+    padding: calc(var(--spacing) * 9);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
