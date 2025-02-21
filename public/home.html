@@ -7,30 +7,42 @@
     <title>Alfahrezi</title>
 </head>
 <body class="bg-[#181A1C]">
-    <nav class="bg-[#181A1C] w-full top-0 px-16 py-5 fixed z-99999">
+
+
+    <nav class="bg-[#181A1C] w-full top-0 px-16 max-[780px]:px-8 py-5 fixed z-99999">
         <div class="flex items-center">
             <div class="flex">
-                <img src="src/image/logo.png" alt="" class="w-[100px] mr-10">
-                <a class="text-white mx-10 text-lg" href="#">Series</a>
-                <a class="text-white mx-10 text-lg" href="#">Film</a>
-                <a class="text-white mx-10 text-lg" href="#">Daftar Saya</a>
+                <img src="src/image/logo.png" alt="" class="w-[100px] mr-10 max-[710px]:hidden">
+                <img src="src/image/logo2.png" alt="" class="w-[30px] mr-3 min-[710px]:hidden">
+                <a class="text-white mx-10 max-[710px]:mx-3 text-lg" href="#">Series</a>
+                <a class="text-white mx-10 max-[710px]:mx-3 text-lg" href="#">Film</a>
+                <a class="text-white mx-10 max-[710px]:mx-3 text-lg" href="#">Daftar Saya</a>
             </div>
-            <div class="flex ml-auto">
-                <img src="src/image/profile.png" alt="" class="mr-2 rounded-full w-[35px]">
-                <svg class="w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+            <div class="flex ml-auto relative">
+                <img src="src/image/profile.png" alt="profile" id="profile-icon" class="mr-2 rounded-full w-[35px] cursor-pointer">
+                <svg id="dropdown-toggle" class="w-5 text-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                </svg>                                  
+                </svg>
+                <div class="dropdown hidden absolute right-0 mt-2 w-48 bg-[#181A1C] shadow-lg rounded-lg p-2" id="dropdown-menu">
+                    <a class="block text-white px-4 py-2 rounded hover:text-[#3254FF]" href="#">Profil Saya</a>
+                    <a class="block text-white px-4 py-2 rounded hover:text-[#3254FF]" href="#">Ubah Premium</a>
+                    <a class="block text-white px-4 py-2 rounded hover:text-[#3254FF]" href="#">Keluar</a>
+                </div>
             </div>
         </div>
     </nav>
+
+
     <div class="bg-hero relative w-full mt-16">
         <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C] to-[#181A1C]/0 z-10"></div>
-        <div class="absolute w-full bottom-0 px-16 pb-20 z-20">
-            <div class="w-[60%]">
-                <h1 class="text-white font-bold font-lato text-5xl">Duty After School</h1>
-                <p class="text-white font-lato text-base mt-7">Sebuah benda tak dikenal mengambil alih dunia. 
+        <div class="absolute w-full bottom-0 px-16 max-[780px]:px-8 pb-20 z-20">
+            <div class="w-[60%] max-[790px]:w-full">
+                <h1 class="text-white font-bold font-lato text-5xl max-[600px]:text-4xl">Duty After School</h1>
+                <p class="text-white font-lato text-base mt-7 max-[600px]:hidden">Sebuah benda tak dikenal mengambil alih dunia. 
                     Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, 
                     termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.</p>
+                <p class="text-white font-lato text-base mt-7 min-[600px]:hidden">Sebuah benda tak dikenal mengambil alih dunia. 
+                    Dalam keputusasaan, Departemen Pertahanan mulai merekrut...</p>
             </div>
             <div class="flex gap-3 mt-7">
                 <a href="#" class="bg-[#0F1E93] px-6 py-2 text-white font-lato font-bold rounded-full">Mulai</a>
@@ -55,258 +67,319 @@
         </div>
     </div>
 
-    <div class="px-16">
+    <div class="px-16 max-[780px]:px-8 relative">
         <h1 class="text-white text-2xl font-bold mb-5">Melanjutkan Tonton Film</h1>
-        <div class="grid grid-cols-4 gap-8 relative">
-            <div class="flex absolute h-full w-full z-10">
-                <div class="relative w-full h-full">
-                    <a href="#" class="absolute p-3 bg-[#2F3334] border border-[#E7E3FC3B]/23 rounded-full text-white font-bold w-12 bottom-[42%] -left-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-    
-                    <a href="#" class="absolute p-3 bg-[#2F3334] border border-[#E7E3FC3B]/23 rounded-full text-white font-bold w-12 bottom-[42%] -right-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                        </svg> 
-                    </a>
-                </div>                              
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/gambar1.png" alt="" class="rounded-lg">
-                <div class="absolute w-full flex items-center bottom-0 px-4 pb-3 font-lato text-white font-bold z-20">
-                    <h1>Don't Look Up</h1>
-                    <div class="flex ml-auto items-center">
-                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                        </svg>
-                        <h1 class="font-normal text-sm ml-1">4.5/5</h1>                          
+        <div class="overflow-x-auto scrollbar-hide gap-8 relative">
+            <div id="movie-slider" class="flex space-x-4 transition-transform duration-300">
+                <div class="min-w-[200px] max-w-[430px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/gambar1.png" alt="" class="rounded-lg">
+                        <div class="absolute w-full flex items-center bottom-0 px-4 pb-3 font-lato text-white font-bold z-20">
+                            <h1>Don't Look Up</h1>
+                            <div class="flex ml-auto items-center">
+                                <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                </svg>
+                                <h1 class="font-normal text-sm ml-1">4.5/5</h1>                          
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/gambar2.png" alt="" class="rounded-lg">
-                <div class="absolute w-full flex items-center bottom-0 px-4 pb-3 font-lato text-white font-bold z-20">
-                    <h1>Don't Look Up</h1>
-                    <div class="flex ml-auto items-center">
-                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                        </svg>
-                        <h1 class="font-normal text-sm ml-1">4.2/5</h1>                          
+                <div class="min-w-[200px] max-w-[430px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/gambar2.png" alt="" class="rounded-lg">
+                        <div class="absolute w-full flex items-center bottom-0 px-4 pb-3 font-lato text-white font-bold z-20">
+                            <h1>Don't Look Up</h1>
+                            <div class="flex ml-auto items-center">
+                                <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                </svg>
+                                <h1 class="font-normal text-sm ml-1">4.2/5</h1>                          
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/gambar3.png" alt="" class="rounded-lg">
-                <div class="absolute w-full flex items-center bottom-0 px-4 pb-3 font-lato text-white font-bold z-20">
-                    <h1>Don't Look Up</h1>
-                    <div class="flex ml-auto items-center">
-                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                        </svg>
-                        <h1 class="font-normal text-sm ml-1">4.6/5</h1>                          
+                <div class="min-w-[200px] max-w-[430px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/gambar3.png" alt="" class="rounded-lg">
+                        <div class="absolute w-full flex items-center bottom-0 px-4 pb-3 font-lato text-white font-bold z-20">
+                            <h1>Don't Look Up</h1>
+                            <div class="flex ml-auto items-center">
+                                <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                </svg>
+                                <h1 class="font-normal text-sm ml-1">4.6/5</h1>                          
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/gambar4.png" alt="" class="rounded-lg">
-                <div class="absolute w-full flex items-center bottom-0 px-4 pb-3 font-lato text-white font-bold z-20">
-                    <h1>Don't Look Up</h1>
-                    <div class="flex ml-auto items-center">
-                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                        </svg>
-                        <h1 class="font-normal text-sm ml-1">4.4/5</h1>                          
+                <div class="min-w-[200px] max-w-[430px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/gambar4.png" alt="" class="rounded-lg">
+                        <div class="absolute w-full flex items-center bottom-0 px-4 pb-3 font-lato text-white font-bold z-20">
+                            <h1>Don't Look Up</h1>
+                            <div class="flex ml-auto items-center">
+                                <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                                </svg>
+                                <h1 class="font-normal text-sm ml-1">4.4/5</h1>                          
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        
         <!-- TOP RATING -->
         <h1 class="text-white text-2xl font-bold mb-5 mt-20">Top Rating Film dan Series Hari ini</h1>
-        <div class="grid grid-cols-5 gap-8 relative">
-            <div class="flex absolute h-full w-full z-10">
-                <div class="relative w-full h-full">
-                    <a href="#" class="absolute p-3 bg-[#2F3334] border border-[#E7E3FC3B]/23 rounded-full text-white font-bold w-12 bottom-[42%] -left-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-    
-                    <a href="#" class="absolute p-3 bg-[#2F3334] border border-[#E7E3FC3B]/23 rounded-full text-white font-bold w-12 bottom-[42%] -right-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                        </svg> 
-                    </a>
-                </div>                              
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/panjang1.png" alt="" class="rounded-lg">
-                <div class="absolute w-full flex items-center top-0 px-4 pt-3 font-lato text-white font-bold z-20">
-                    <a href="#" class="bg-[#0F1E93] px-3 py-1 text-white font-lato font-bold rounded-full">Episode Baru</a>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/panjang2.png" alt="" class="rounded-lg">
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/panjang4.png" alt="" class="rounded-lg">
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/panjang3.png" alt="" class="rounded-lg">
-                <div class="absolute w-full flex items-center top-0 px-4 pt-3 font-lato text-white font-bold z-20">
-                    <a href="#" class="bg-[#0F1E93] px-3 py-1 text-white font-lato font-bold rounded-full">Episode Baru</a>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/panjang5.png" alt="" class="rounded-lg">
-                <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
-                    <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
-                        <h1 class="text-center">Top</h1>
-                        <p class="text-center">10</p>
+        <div class="overflow-x-auto scrollbar-hide gap-8 relative">
+            <div id="movie-slider" class="flex space-x-4 transition-transform duration-300">
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/panjang1.png" alt="" class="rounded-lg">
+                        <div class="absolute w-full flex items-center top-0 px-4 pt-3 font-lato text-white font-bold z-20">
+                            <a href="#" class="bg-[#0F1E93] px-3 py-1 text-white font-lato font-bold rounded-full">Episode Baru</a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/panjang2.png" alt="" class="rounded-lg">
+                    </div>
+                </div>  
+
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/panjang4.png" alt="" class="rounded-lg">
+                    </div>
+                </div>
+
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/panjang3.png" alt="" class="rounded-lg">
+                        <div class="absolute w-full flex items-center top-0 px-4 pt-3 font-lato text-white font-bold z-20">
+                            <a href="#" class="bg-[#0F1E93] px-3 py-1 text-white font-lato font-bold rounded-full">Episode Baru</a>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/panjang5.png" alt="" class="rounded-lg">
+                        <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
+                            <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
+                                <h1 class="text-center">Top</h1>
+                                <p class="text-center">10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
 
         <!-- film trending -->
         <h1 class="text-white text-2xl font-bold mb-5 mt-20">Film Trending</h1>
-        <div class="grid grid-cols-5 gap-8 relative">
-            <div class="flex absolute h-full w-full z-10">
-                <div class="relative w-full h-full">
-                    <a href="#" class="absolute p-3 bg-[#2F3334] border border-[#E7E3FC3B]/23 rounded-full text-white font-bold w-12 bottom-[42%] -left-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-    
-                    <a href="#" class="absolute p-3 bg-[#2F3334] border border-[#E7E3FC3B]/23 rounded-full text-white font-bold w-12 bottom-[42%] -right-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                        </svg> 
-                    </a>
-                </div>                              
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/trending1.png" alt="" class="rounded-lg">
-                <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
-                    <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
-                        <h1 class="text-center">Top</h1>
-                        <p class="text-center">10</p>
+        <div class="overflow-x-auto scrollbar-hide gap-8 relative">
+            <div id="movie-slider" class="flex space-x-4 transition-transform duration-300">
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/trending1.png" alt="" class="rounded-lg">
+                        <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
+                            <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
+                                <h1 class="text-center">Top</h1>
+                                <p class="text-center">10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/trending2.png" alt="" class="rounded-lg">
+                        <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
+                            <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
+                                <h1 class="text-center">Top</h1>
+                                <p class="text-center">10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/trending3.png" alt="" class="rounded-lg">
+                        <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
+                            <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
+                                <h1 class="text-center">Top</h1>
+                                <p class="text-center">10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/trending4.png" alt="" class="rounded-lg">
+                        <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
+                            <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
+                                <h1 class="text-center">Top</h1>
+                                <p class="text-center">10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/trending5.png" alt="" class="rounded-lg">
+                        <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
+                            <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
+                                <h1 class="text-center">Top</h1>
+                                <p class="text-center">10</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/trending2.png" alt="" class="rounded-lg">
-                <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
-                    <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
-                        <h1 class="text-center">Top</h1>
-                        <p class="text-center">10</p>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/trending3.png" alt="" class="rounded-lg">
-                <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
-                    <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
-                        <h1 class="text-center">Top</h1>
-                        <p class="text-center">10</p>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/trending4.png" alt="" class="rounded-lg">
-                <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
-                    <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
-                        <h1 class="text-center">Top</h1>
-                        <p class="text-center">10</p>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/trending5.png" alt="" class="rounded-lg">
-                <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
-                    <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
-                        <h1 class="text-center">Top</h1>
-                        <p class="text-center">10</p>
-                    </div>
-                </div>
-            </div>
+            </div>  
         </div>
 
         <!-- film trending -->
         <h1 class="text-white text-2xl font-bold mb-5 mt-20">Rilis Baru</h1>
-        <div class="grid grid-cols-5 gap-8 relative">
-            <div class="flex absolute h-full w-full z-10">
-                <div class="relative w-full h-full">
-                    <a href="#" class="absolute p-3 bg-[#2F3334] border border-[#E7E3FC3B]/23 rounded-full text-white font-bold w-12 bottom-[42%] -left-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-    
-                    <a href="#" class="absolute p-3 bg-[#2F3334] border border-[#E7E3FC3B]/23 rounded-full text-white font-bold w-12 bottom-[42%] -right-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                        </svg> 
-                    </a>
-                </div>                              
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/trending5.png" alt="" class="rounded-lg">
-                <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
-                    <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
-                        <h1 class="text-center">Top</h1>
-                        <p class="text-center">10</p>
+        <div class="overflow-x-auto scrollbar-hide gap-8 relative">
+            <div id="movie-slider" class="flex space-x-4 transition-transform duration-300">
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/trending5.png" alt="" class="rounded-lg">
+                        <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
+                            <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
+                                <h1 class="text-center">Top</h1>
+                                <p class="text-center">10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/baru1.png" alt="" class="rounded-lg">
+                        <div class="absolute w-full flex items-center top-0 px-4 pt-3 font-lato text-white font-bold z-20">
+                            <a href="#" class="bg-[#0F1E93] px-3 py-1 text-white font-lato font-bold rounded-full">Episode Baru</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/baru1.png" alt="" class="rounded-lg">
-                <div class="absolute w-full flex items-center top-0 px-4 pt-3 font-lato text-white font-bold z-20">
-                    <a href="#" class="bg-[#0F1E93] px-3 py-1 text-white font-lato font-bold rounded-full">Episode Baru</a>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/panjang5.png" alt="" class="rounded-lg">
-                <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
-                    <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
-                        <h1 class="text-center">Top</h1>
-                        <p class="text-center">10</p>
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/panjang5.png" alt="" class="rounded-lg">
+                        <div class="absolute flex items-center top-0 pr-4 font-lato text-white font-bold right-0 z-20">
+                            <div class="bg-[#B71F1D] px-2 py-1 text-white font-lato font-bold rounded-tr-lg rounded-bl-lg">
+                                <h1 class="text-center">Top</h1>
+                                <p class="text-center">10</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/panjang3.png" alt="" class="rounded-lg">
-                <div class="absolute w-full flex items-center top-0 px-4 pt-3 font-lato text-white font-bold z-20">
-                    <a href="#" class="bg-[#0F1E93] px-3 py-1 text-white font-lato font-bold rounded-full">Episode Baru</a>
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/panjang3.png" alt="" class="rounded-lg">
+                        <div class="absolute w-full flex items-center top-0 px-4 pt-3 font-lato text-white font-bold z-20">
+                            <a href="#" class="bg-[#0F1E93] px-3 py-1 text-white font-lato font-bold rounded-full">Episode Baru</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="relative">
-                <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
-                <img src="src/image/baru2.png" alt="" class="rounded-lg">
+                <div class="min-w-[200px] max-w-[340px] flex-shrink-0">
+                    <div class="relative">
+                        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#181A1C]/50 to-[#181A1C]/0 z-10"></div>
+                        <img src="src/image/baru2.png" alt="" class="rounded-lg">
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
+
+    <footer class="px-16 max-[780px]:px-8 py-10 border-t border-[#E7E3FC3B]">
+        <div class="flex max-[1050px]:flex-wrap">
+            <div class="w-[35%] max-[1050px]:w-full max-[1050px]:mb-10">
+                <img src="src/image/logo.png" alt="" class="w-[150px] mr-10">
+                <h1 class="text-[#C1C2C4] font-lato mt-5">@2023 Chill All Rights Reserved.</h1>
+            </div>
+            <div class="flex w-[65%] max-[1050px]:w-full max-[700px]:flex-wrap">
+                <div class="max-[700px]:w-full">
+                    <h1 class="text-white font-semibold font-lato mb-2">Genre</h1>
+                    <div class="grid grid-cols-5 max-[1050px]:grid-cols-4 gap-8">
+                        <ul class="text-[#C1C2C4] text-base">
+                            <li class=""><a href="#">Aksi</a></li>
+                            <li class="my-2"><a href="#">Anak-anak</a></li>
+                            <li class=""><a href="#">Anime</a></li>
+                            <li class="mt-2"><a href="#">Britania</a></li>
+                        </ul>
+                        <ul class="text-[#C1C2C4] text-base">
+                            <li class=""><a href="#">Drama</a></li>
+                            <li class="my-2"><a href="#">Fantasi Ilmiah & Fantasi</a></li>
+                            <li class=""><a href="#">Kejahatan</a></li>
+                            <li class="mt-2"><a href="#">KDrama</a></li>
+                        </ul>
+                        <ul class="text-[#C1C2C4] text-base">
+                            <li class=""><a href="#">Komedi</a></li>
+                            <li class="my-2"><a href="#">Petualangan</a></li>
+                            <li class=""><a href="#">Perang</a></li>
+                            <li class="mt-2"><a href="#">Romantis</a></li>
+                        </ul>
+                        <ul class="text-[#C1C2C4] text-base">
+                            <li class=""><a href="#">Sains & Alam</a></li>
+                            <li class="my-2"><a href="#">Thriller</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="max-[700px]:w-full">
+                    <h1 class="text-white font-semibold font-lato mb-2">Bantuan</h1>
+                    <ul class="text-[#C1C2C4] text-base">
+                        <li class=""><a href="#">Faq</a></li>
+                        <li class="my-2"><a href="#">Kontak Kami</a></li>
+                        <li class=""><a href="#">Privasi</a></li>
+                        <li class="mt-2"><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var profileIcon = document.getElementById('profile-icon');
+            var dropdownToggle = document.getElementById('dropdown-toggle');
+            var dropdownMenu = document.getElementById('dropdown-menu');
+            var navContainer = document.querySelector('.ml-auto');
+            
+            function toggleDropdown() {
+                dropdownMenu.classList.toggle('hidden');
+            }
+            
+            if (profileIcon && dropdownToggle && dropdownMenu) {
+                profileIcon.addEventListener('click', toggleDropdown);
+                dropdownToggle.addEventListener('click', toggleDropdown);
+                
+                document.addEventListener('click', function(event) {
+                    if (!navContainer.contains(event.target)) {
+                        dropdownMenu.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -26,3 +26,41 @@
     justify-content: center;
     padding: 0 20px;
 }
+
+.wrapper {
+    max-width: 750px;
+    width: 100%;
+}
+.film-container {
+    margin-bottom: 20px;
+}
+.film-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.film-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
+}
+.film-slider::-webkit-scrollbar {
+    display: none; /* Sembunyikan scrollbar di Chrome, Safari */
+}
+.film-item {
+    min-width: 150px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Responsif: Sesuaikan ukuran jika lebih kecil dari 750px */
+@media (max-width: 750px) {
+    .film-item {
+        min-width: 120px;
+        height: 160px;
+    }
+}
