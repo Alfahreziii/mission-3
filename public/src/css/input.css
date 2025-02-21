@@ -6,21 +6,21 @@
   }
 
 .bg-login {
-    @apply bg-[url(../src/image/bg-login.jpeg)] bg-no-repeat bg-center bg-cover bg-fixed min-h-[100vh];
+    @apply bg-[url(src/image/bg-login.jpeg)] bg-no-repeat bg-center bg-cover bg-fixed min-h-[100vh];
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
 }
 .bg-register {
-    @apply bg-[url(../src/image/register.jpg)] bg-no-repeat bg-center bg-cover bg-fixed min-h-[100vh];
+    @apply bg-[url(src/image/register.jpg)] bg-no-repeat bg-center bg-cover bg-fixed min-h-[100vh];
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
 }
 .bg-hero {
-    @apply bg-[url(../src/image/bg-hero.png)] relative w-full h-[587px] flex items-center justify-center bg-cover bg-center;
+    @apply bg-[url(src/image/bg-hero.png)] relative w-full h-[587px] flex items-center justify-center bg-cover bg-center;
     display: flex;
     align-items: center;
     justify-content: center;
